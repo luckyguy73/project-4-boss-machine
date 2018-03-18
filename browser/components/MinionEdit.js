@@ -14,7 +14,7 @@ const MinionEdit = ({name, title, salary, weaknesses, handleChange, submit}) => 
         </div>
         <div className="minion-edit-row">
           <div className="minion-edit-label">Salary:</div>
-          <input name="salary" type="text" value={salary}  onChange={handleChange}></input>
+          <input name="salary" type="text" value={isNaN(salary) ? salary.replace(/,/g, "") : salary}  onChange={handleChange}></input>
         </div>
       </div>
       <div>

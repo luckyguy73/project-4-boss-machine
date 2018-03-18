@@ -10,7 +10,7 @@ const AllMinions = props => {
     return (
       <div className="minion-grid" key={minion.id}>
         <Link to={`/minions/${minion.id}`} >
-          <img className="button minion-thumbnail" src="public/img/minion.svg" alt="minion" />
+          <img className="button minion-thumbnail" src="public/img/minion"{0.4 < Math.random() ? "1" : "2"}".png" alt="minion" />
           <p>{name}</p>
           <p>ID #{minion.id}</p>
         </Link>
